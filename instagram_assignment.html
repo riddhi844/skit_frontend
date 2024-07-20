@@ -1,107 +1,232 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Instagram</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <!-- 
+<style>
+
+    
+    .box{
+        height: 50%;
+        width: 50%;
+        box-sizing: border-box;
+        display: inline-block;
+        display:flex;
+        flex: wrap;
+        
+    }
+    .upper{
+        
+        height: 60%;
+    
+    }
+    img{
+        height: 50%;
+        width: 50%;
+      border-radius: 2px;
+    
+    }
+    button{
+        padding: 12px 20px ;
+        width: 80;
+        background-color: bisque;
+        border:none;
+        border-radius: 2px ;
+        color: black;
+    }
+</style>
+    
+</head>
+<body>
+    <div class="box">
+    <div class="upper"> 
+        <img src="https://images.meesho.com/images/products/125575845/aim5g_512.webp">
+
+    </div>
+    <div class="lower"> 
+
+        <h1>Title: Women wear</h1>
+        <h2>Price- 500</h2>
+        <h3>Description - GOOD</h3>
+        <button>ADD TO CART</button>
+    </div>
+
+    </div>
+
+    <div class="box">
+        <div colspan="2" class="upper"> 
+            <img src="https://images.meesho.com/images/products/349993944/u4aag_512.webp">
+    
+        </div>
+        <div class="lower"> 
+    
+            <h1>Title:Men wear</h1>
+            <h2>Price- 500</h2>
+            <h3>Description - GOOD</h3>
+            <button>ADD TO CART</button>
+        </div>
+    
+        </div> -->
+
+
+
+
+
         <style>
-            *{
-    margin: 0px;
-    padding: 0px;
+
+* {
     box-sizing: border-box;
+    margin: 0;
+    margin-left: 20px;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
 }
 
-
-.container{
-
-    height: 100vh;
-    border: 2px solid black;
+body {
+    background-color: #fafafa;
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 100vh;
 }
 
-.left,.right{
-
-    height: 75%;
-    width:30%;
-    border: 2px solid black;
-}
-
-.upper{
-
-    height: 70%;
-    background-color: yellow;
-}
-
-.mid{
-
-    height: 10%;
-    background-color: black;
-}
-
-.lower{
-
-    height: 20%;
-    background-color: green;
-}
-
-.logo{
-
-    height: 20%;
-    background-color: orange;
-}
-
-.form{
-
-    height: 50%;
-    background-color: blue;
-
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 
-.links{
 
-    height: 30%;
-    background-color: pink;
+.login-container {
+    width: 350px;
 }
 
-@media (max-width:680px){
+.login-box {
+    background-color: #fff;
+    border: 1px solid #dbdbdb;
+    padding: 40px;
+    margin-bottom: 10px;
+    text-align: center;
+}
 
-    .left{
+.logo img {
+    width: 200px;
+    margin-bottom: 20px;
+    margin-right: 15px;
+}
 
-        display: none;
-    }
+.login-form input {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #dbdbdb;
+    border-radius: 3px;
+    background-color: #fafafa;
+}
 
-    .right{
+.login-form button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 3px;
+    background-color: #3897f0;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
 
-        width: 50%;
-    }
-    
+.or-divider {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.or-divider .line {
+    flex-grow: 1;
+    height: 1px;
+    background-color: #dbdbdb;
+}
+
+.or-divider .or {
+    margin: 0 10px;
+    color: #8e8e8e;
+    font-weight: bold;
+}
+
+.login-facebook {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #3897f0;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 5px 0;
+}
+
+.login-facebook img {
+    width: 20px;
+
+}
+
+.forgot-password {
+    display: block;
+    margin: 10px 0;
+    color: #00376b;
+    text-decoration: none;
+}
+
+.signup-box {
+    background-color: #fff;
+    border: 1px solid #dbdbdb;
+    padding: 20px;
+    text-align: center;
+}
+
+.signup-box p {
+    margin: 0;
+}
+
+.signup-box a {
+    color: #3897f0;
+    text-decoration: none;
+    font-weight: bold;
 }
         </style>
-    </head>
-    <body>
-    
+        </head>
+        <body>
         <div class="container">
-            <div class="left">
-                <img src="" alt="">
+            <div class="phone-mockup">
+                <img src="instalogo.png" alt="Phone Mockup">
             </div>
-            <div class="right">
-                <div class="upper">
-                    <div class="logo"></div>
-                    <div class="form"></div>
-                    <div class="links"></div>
+            <div class="login-container">
+                <div class="login-box">
+                    <div class="logo">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyh8nVZfZMblN1b-RU-Rszv5UZsfvPbfncLQ&s">
+                    </div>
+                    <form class="login-form">
+                        <input type="text" placeholder="Phone number, username, or email" required>
+                        <input type="password" placeholder="Password" required>
+                        <button type="submit">Log In</button>
+                        <div class="or-divider">
+                            <div class="line"></div>
+                            <div class="or">OR</div>
+                            <div class="line"></div>
+                        </div>
+                        <div class="login-facebook">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook Logo">
+                            <span>Log in with Facebook</span>
+                        </div>
+                        <a href="#" class="forgot-password">Forgot password?</a>
+                    </form>
                 </div>
-                <div class="mid">
-                
-                </div>
-                <div class="lower">
+                <div class="signup-box">
+                    <p>Don't have an account? <a href="#">Sign up</a></p>
                 </div>
             </div>
         </div>
-    </body>
+</body>
 </html>
