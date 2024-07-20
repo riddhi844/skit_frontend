@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+        }
+        body{
+            display:flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .box
+       {
+            height:400px;
+            width:400px;
+            box-shadow: 2px skyblue;
+            overflow: hidden;
+        }
+        .content
+        {
+            padding:10px solid black;
+            padding:10px;
+            font-family:sans-serif;
+            background-color: white;
+            text-align: justify;
+            transition:all 2s;
+        }
+        img{
+            height:100%;
+            width:100%;
+        }
+        h1,h2 ,p{
+            margin:5px 0px;
+            overflow:hidden;
+    
+        }
+        .box:hover .content{
+            transform: translateY(-200px);
+        }
+
+    </style>
+    <body>
+        <div class="box">
+            <img src="images/RJ_img1.avif">
+            <div class="content">
+                <h1>Title - Car</h1>
+                <h1>Car</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id accusamus quod aliquid! Nemo optio fugiat, tempora, consequuntur qui nostrum laboriosam quasi adipisci quos fuga aspernatur doloribus dolore! Earum incidunt, voluptatibus fuga tempore quo nihil obcaecati reprehenderit modi repellendus itaque mollitia alias quaerat iure ipsam ipsum magni atque amet aliquam vitae.</p>
+            </div>
+        </div>
+    </body>
+</html>

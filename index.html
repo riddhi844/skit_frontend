@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en"> <!--root element hai ye   , css has three types:inline,external,internal--> 
+   <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>First web page</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <style>
+   /*
+    .h1
+    {
+        color:rgb(0, 0, 0) ;
+        text-align:center;
+        font-family:'Times New Roman', Times, serif; 
+        text-transform:capitalize;
+        border:2px solid black;
+        border-radius: 80px;
+        background-color: rgb(249, 131, 249);
+       box-shadow: 0px 0px 20px rgb(110, 181, 235);
+        text-shadow: 2px 2px 10px white;
+        letter-spacing: 2px;
+ 
+        margin:10px 10px;
+        padding: 50px 100px;
+    }*/
+    .box 
+    {
+    text-shadow: 2px 2px 10px;
+    color:blueviolet;
+    height: 300px;
+    width:300px ;
+    border: 2px dashed yellow;
+    background-color: lavender;
+    padding:50px;
+
+    }
+    .box1 
+    {
+    text-shadow: 2px 2px 10px;
+    color:blueviolet;
+    height: 300px;
+    width:300px ;
+    border: 2px dashed yellow;
+    background-color: lavender;
+    padding:50px;
+   box-sizing:border-box;
+    }
+    </style>
+    <body>
+        <div class="box">Annyonghaseo</div>
+        <div class="box1">Annyonghaseo</div>
+        <!--
+          <h1 class="h1" id="box">this is my heading tag</h1>
+          <p class="h1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, dignissimos est soluta iure laborum vero optio sint et illum quos nobis nisi omnis eaque accusantium illo placeat quas ipsam commodi cumque vitae. Sunt, enim sequi corporis mollitia blanditiis recusandae consequatur voluptatem facilis soluta doloribus iste architecto! Ratione fugiat eaque et modi delectus reiciendis vel quasi sed. Placeat officiis quae reprehenderit. Ullam, quam! Aperiam ducimus magni unde ipsum laboriosam reprehenderit sunt nulla neque laborum consequuntur veniam itaque perspiciatis similique culpa rerum dolorem natus saepe, non quo corrupti consequatur quos dignissimos aut laudantium? Voluptatum error perspiciatis consectetur laborum fugit, nobis necessitatibus iste.</p>
+       
+        --selectors
+           1)class
+           2)id
+           3)pseudo
+           4)universal
+
+
+       <h1 style="color:red ;text-align:center;font-style:oblique; text-transform:capitalize; border:2px solid black;border-radius: 80px;
+        background-color: black;padding: 10px;box-shadow: 0px 0px 20px yellowgreen;text-shadow: 2px 2px 10px white;">Sarangheo</h1>
+        <marquee behaviour="alternate" direction="down"><h1><center>this is my heading tag</center></h1></marquee>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur euismod, 
+        libero ac consectetur consectetur, <small>arcu risus ullamcorper libero,</small> a posuere lacus ex a lorem.
+        Donec quis nulla at lorem auctor lacinia. Cras consequat leo at nunc egestas, ac tincidunt libero convallis. 
+        Integer a l</p>
+        
+        <brk>50</brk><del>5000</del> <br> <br>
+        <p>H<sup>2</sup>O</p>
+        <h2><u>this is my h2 tag</u></h2>
+        <p>Lorem <b>ipsum dolor</b>, sit amet consectetur <i>adipisicing elit</i>. Vitae<ins>this is my new text</ins> amet a mollitia quos temporibus, aut officiis reiciendis placeat cumque, maxime ipsam dolorum. Ea sequi, tempora necessitatibus inventore quos dolorum eveniet quia cupiditate delectus harum error eum temporibus, ut velit. Unde nemo exercitationem quisquam libero alias totam non repellat? Cumque impedit error est libero, perferendis temporibus ut autem, quod veniam ad, dolores quia sed quos commodi ullam iste! Assumenda inventore soluta reiciendis suscipit saepe atque eligendi laborum voluptate, voluptatem sint minus magni blanditiis ipsa consectetur perspiciatis quidem ipsam recusandae asperiores! Similique, rerum. Labore quidem repudiandae voluptatibus eos quis. Qui, suscipit numquam?</p>
+
+        <p>In today session we will learn about <abbr title="Hyper Text Markup Language"> html </abbr> language</p>
+       <video src="vid1.mp4" controls width="300"></video>
+        <audio src="vid1.mp4" controls></audio>
+
+        <ul type="circle">
+            <li>name</li>
+            <li>about</li>
+            <li>contact</li>
+            <li>register</li>
+        </ul>
+        
+
+        <ol type="1">
+            <li>name</li>
+            <li>about</li>
+            <li>contact</li>
+            <li>register</li>
+        </ol>
+
+        <dl>
+            <dt>COFFEE</dt>
+            <dd>cold coffee 50</dd>
+            <dd>hot coffee 30</dd>
+            <dd>simple coffee 40</dd>
+            <dd>oreo coffee 80</dd>
+        </dl>
+
+        
+        <dl>
+            <dt>TEA</dt>
+            <dd>pink tea 10</dd>
+            <dd>green tea 30</dd>
+            <dd>black tea 40</dd>
+            <dd>poision tea 00</dd>
+        </dl>
+
+        <ol type="1">
+            <li>List Item 1
+              <ol type="A">
+                <li>nested item 1.1</li>
+                <li>nested item 1.2</li>
+              </ol>
+            </li>
+        
+            <li>List Item 2
+              <ol type="i">
+                <li>nested item 2.1</li>
+                <li>nested item 2.2
+                    <ul type="dark circle">
+                        <li>nested item 2.2.1</li>
+                        <li>nested item 2.2.2
+                            <ul type="circle">
+                                <li>nested item 2.2.2.1</li>
+                                <li>nested item 2.2.2.2</li>
+                            </ul>
+                       <li>nested item 2.2.3</li>  
+                    </ul> 
+                    </li>
+                <li>nested item 3.1</li> 
+              </ol>
+            </li>
+            <li>List Item 3
+               <ui type="bold circle">
+                <li>item 1</li>
+                <li>item 2</li>
+                <li>item 3</li>
+               </ui>
+            </li>
+        </ol>
+
+    
+
+    <form action="/abc/" method="request.post[myname]">
+    <label for="username">Name :</label>
+         <input type="text" id="username" placeholder="enter your name" name="my name" /> <br /> <br />
+    <label for="" style="color: red;" >Email :</label>
+    <label for="email"></label>
+        <input type="email" id="email" placeholder="enter your email" name="my email" value="riddhi@gmail.com" disabled /> <br /> <br />
+    <label for="">Password :</label>
+        <input type="password" id="password" placeholder="enter your email" name="my password" /> <br /> <br />
+    <label for="password">Gender</label>
+        <input type="radio" name="gender">Male
+        <input type="radio" name="gender">Female <br /> <br /> 
+    <label for="">Language</label>
+        <input type="checkbox">Hindi
+        <input type="checkbox">English
+        <input type="checkbox">Marwadi <br /> <br />
+    <label for="">City :</label>
+        <select name="" id="">
+            <option value="">none</option>
+            <option value="">Jaipur</option>
+            <option value="">Delhi</option>
+            <option value="">Mumbai</option>
+        </select> <br /> <br />
+
+    <label for="">Date</label>
+        <input type="date" ><br /> <br />
+        
+    <label for="">File</label>
+        <input type="file" ><br /> <br />
+
+    <label for="">Time</label>
+        <input type="time" ><br /> <br />
+
+    <label for="">Color</label>
+        <input type="color" ><br /> <br />
+
+    <label for="">Range</label>
+        <input type="range" ><br /> <br />
+
+    <textarea name="" id="" rows="10" cols="30" placeholder="enter your message"></textarea> <br /> <br />
+         
+    <label for="">Hidden</label>
+        <input type="hidden" ><br /> <br />
+        <input type="submit">
+    </form>
+
+
+  <table border="">
+    <tr>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Password</th>
+        <th>City</th>
+    </tr>
+    <tr>
+        <td>riddhi</td>
+        <td>riddhi@gmail.com</td>
+        <td>1223</td>
+        <td>Jaipur</td>
+    </tr>
+    <tr>
+        <td>tanishka</td>
+        <td>tanishka@gmail.com</td>
+        <td>1535</td>
+        <td>Jaipur</td>
+    </tr>
+    <tr>
+        <td>uttkarshika</td>
+        <td>uttu@gmail.com</td>
+        <td>73647</td>
+        <td>Jaipur</td>
+    </tr>
+  </table>
+
+
+
+
+<table border="">
+    <tr>
+      <th>Name</th>
+      <td>jk</td>
+      <td>v</td>
+      <td>jimin</td>
+    </tr>
+    <tr>
+      <th>password</t>
+      <td>555 77 854</td>
+      <td>555 77 855</td>
+      <td>555 77 855</td>
+    </tr>
+  </table>
+
+
+<table border="">
+        <tr>
+          <th>S no.</th>
+          <th colspan="2">Name</th>
+          <th>email</th>
+          <th>city</th>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>Jill</td>
+          <td>Smith</td>
+          <td>jill@gmail.com</td>
+          <td>Jaipur</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>zoe</td>
+            <td>Smith</td>
+            <td>zoe@gmail.com</td>
+            <td>Jaipur</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>ray</td>
+            <td>Smith</td>
+            <td>ray@gmail.com</td>
+            <td>Jaipur</td>
+        </tr>
+</table>
+
+<p><a href="https://www.google.co.in/"></a></p>
+
+<p>hello my name is <span style="color: red;">Riddhi jangid</span></p>
+
+<header>
+    <ul>
+        <lh>name</lh>
+        <lh>about</lh>
+        <lh>contact</lh>
+        <lh>Register</lh>
+    </ul>
+</header>
+<address>
+    <span>plot no.: 20</span>
+    <span>city Jaipur</span>
+    <span>pin code</span>
+</address>
+
+
+<a href="https://www.google.co.in/" alt="google.com">Google</a>
+<a href="https://www.instagram.co.in/" alt="instagram.com">Instagram</a>
+<a href="https://www.facebook.co.in/" alt="facebook.com">Facebook</a>
+
+
+<table border="">
+    <tr>
+        <th rowspan="3">Day</th>
+        <td colspan="2">Monday</td>
+        <th rowspan="2">Seminar</th>
+      </tr>
+      <tr>
+        <td rowspan="2">Schedule</td>
+        <td>Topic</td>
+      </tr>
+      <tr>
+        <td>Begin</td>
+        <td>End</td>
+      </tr>
+</table>
+
+
+<table border="">
+<tr>
+<th rowspan="3">Day</th>
+<th colspan="5" >Seminar</th>
+</tr>
+<tr>
+<th colspan="2">Schedule</th>
+<th colspan="3" rowspan="2">Topic</th>
+</tr>
+<tr>
+<th>Begin</th>
+<th>End</th>
+</tr>
+<tr>
+<td rowspan="2">Monday</td>
+<td rowspan="2">8:00 am</td>
+<td rowspan="2">5:00 pm</td>
+<td>Introduction to XML</td> 
+</tr>
+<tr>
+    <td>Validity:DTD and Relax NG</td>
+</tr>
+
+<tr>
+<td rowspan="3">Tuesday</td>
+<td>8:00 am</td>
+<td>11:00 am</td>
+<td rowspan="">XPath</td>
+</tr>
+<tr>
+<td>11:00 am</td>
+<td>2:00 pm</td>
+</tr>
+<tr>
+<td>2:00 pm</td>
+<td>5:00 om</td>
+<td rowspan="">XSL Transformations</td>
+</tr>
+
+<tr>
+    <td>Wednesday</td>
+    <td>8:00 am</td>
+    <td>12:00 pm</td>
+    <td rowspan="3">XSL Formatting Objects</td>
+    </tr>
+</table> 
+
+    </table>
+-->
+</body>
+</html>
+</body>
+</html>

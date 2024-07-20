@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+        }
+        .box
+        {
+            margin: 50px;
+            padding:200px;
+            border-radius: 30%;
+            border:2px solid black;
+            background-color:yellow;
+            height:200px;
+            width:500px;
+            animation-name:box;
+            animation-duration: 2s;
+            animation-direction: alternate;
+            animation-fill-mode:forwards;
+            position: relative;
+            animation-delay:3s ;
+
+
+        }
+        @keyframes box {
+  from {top:0px;background-color: red;}
+  to {left:400px;background-color: yellow;}
+}
+
+    </style>
+    <body>
+        <div class="box"></div>
+    </body>
+</html>

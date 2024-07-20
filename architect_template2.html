@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BR Architects</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            background-color: #333;
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+        }
+        .header h1 {
+            margin: 0;
+        }
+        .nav {
+            display: flex;
+            justify-content: center;
+            background-color: #444;
+        }
+        .nav a {
+            color: #fff;
+            padding: 1rem;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+        .nav a:hover {
+            background-color: #555;
+        }
+        .hero {
+            background-image: url('https://www.w3schools.com/w3css/img_lights.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 60vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+        }
+        .hero h1 {
+            font-size: 3rem;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 1rem;
+        }
+        .section {
+            padding: 2rem;
+        }
+        .projects {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+        .project {
+            flex: 1 1 calc(33.333% - 1rem);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .project img {
+            width: 100%;
+        }
+        .project h3 {
+            margin: 0;
+            padding: 1rem;
+            background-color: #f4f4f4;
+        }
+        .team {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+        .team-member {
+            flex: 1 1 calc(25% - 1rem);
+            text-align: center;
+        }
+        .team-member img {
+            width: 100%;
+            border-radius: 50%;
+        }
+        .contact {
+            background-color: #f4f4f4;
+            padding: 2rem;
+        }
+        .contact form {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+        .contact form input, .contact form textarea {
+            padding: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .contact form button {
+            padding: 1rem;
+            border: none;
+            background-color: #333;
+            color: #fff;
+            text-transform: uppercase;
+            cursor: pointer;
+        }
+        .contact form button:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>BR Architects</h1>
+    </div>
+    <div class="nav">
+        <a href="#projects">Projects</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </div>
+    <div class="hero">
+        <h1>BR</h1>
+    </div>
+    <div class="section" id="projects">
+        <h2>Projects</h2>
+        <div class="projects">
+            <div class="project">
+                <img src="https://www.w3schools.com/w3images/house5.jpg" alt="Summer House">
+                <h3>Summer House</h3>
+            </div>
+            <div class="project">
+                <img src="https://www.w3schools.com/w3images/house2.jpg" alt="Brick House">
+                <h3>Brick House</h3>
+            </div>
+            <div class="project">
+                <img src="https://www.w3schools.com/w3images/house3.jpg" alt="Renovated">
+                <h3>Renovated</h3>
+            </div>
+            <div class="project">
+                <img src="https://www.w3schools.com/w3images/house4.jpg" alt="Barn House">
+                <h3>Barn House</h3>
+            </div>
+        </div>
+    </div>
+    <div class="section" id="about">
+        <h2>About</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+        <div class="team">
+            <div class="team-member">
+                <img src="https://www.w3schools.com/w3images/team2.jpg" alt="John Doe">
+                <h3>John Doe</h3>
+                <p>CEO & Founder</p>
+                <button>Contact</button>
+            </div>
+            <div class="team-member">
+                <img src="https://www.w3schools.com/w3images/team1.jpg" alt="Jane Doe">
+                <h3>Jane Doe</h3>
+                <p>Architect</p>
+                <button>Contact</button>
+            </div>
+            <div class="team-member">
+                <img src="https://www.w3schools.com/w3images/team3.jpg" alt="Mike Ross">
+                <h3>Mike Ross</h3>
+                <p>Architect</p>
+                <button>Contact</button>
+            </div>
+            <div class="team-member">
+                <img src="https://www.w3schools.com/w3images/team4.jpg" alt="Dan Star">
+                <h3>Dan Star</h3>
+                <p>Architect</p>
+                <button>Contact</button>
+            </div>
+        </div>
+    </div>
+    <div class="section contact" id="contact">
+        <h2>Contact</h2>
+        <form>
+            <input type="text" name="name" placeholder="Name">
+            <input type="email" name="email" placeholder="Email">
+            <input type="text" name="subject" placeholder="Subject">
+            <textarea name="comment" rows="4" placeholder="Comment"></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+</body>
+</html>
